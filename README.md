@@ -40,7 +40,7 @@ The system monitors and manages occupancy based on a pre-set threshold, offering
 
 ## 📈 Practical Significance
 This system provides managers with real-time data to optimize operational efficiency. Insights gained from occupancy trends allow for better staff coordination, space management, and strategic business planning during peak hours.
-
+Results:https://www.youtube.com/watch?v=AJ466xix_Mo&t=4s
 ## 👥 Contributors
 * **Cao Khanh Duy** (Student ID: 22130040)
 * **Supervisor:** Mr. Kien
