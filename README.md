@@ -1,6 +1,6 @@
 # Basic People Counting System on DE1 FPGA
 
-A hardware-based monitoring system designed to track and manage real-time occupancy and total visitor traffic using the **Terasic DE1 FPGA (Cyclone III)** FPGA platform.
+A hardware-based monitoring system designed to track and manage real-time occupancy and total visitor traffic using the **Terasic DE1 FPGA (Cyclone II)** FPGA platform.
 
 ## 📝 Project Overview
 In the rapidly evolving field of integrated circuit design, practicing digital logic on FPGA platforms provides essential hands-on experience. This project, titled **"Design and Implementation of a People Counter System,"** bridges the gap between theoretical digital design and real-world embedded applications.
@@ -30,11 +30,11 @@ The system monitors and manages occupancy based on a pre-set threshold, offering
 ## 🛠 Tech Stack & Components
 * **Hardware Description Language:** Verilog HDL / VHDL
 * **Development Software:** Intel Quartus II (v13.1)
-* **Main Controller:** DE1-SoC FPGA (Cyclone V)
+* **Main Controller:** DE1-SoC FPGA (Cyclone II)
 * **Peripherals:**
     * Infrared (IR) Sensors
     * Multi-color LEDs (Red, Yellow, Green)
-    * 7-Segment Displays (HEX0 - HEX5)
+    * 7-Segment Displays (HEX0 - HEX3)
     * Active Buzzer
     * Breadboard and Jumper Wires
 
