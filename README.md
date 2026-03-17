@@ -1,6 +1,6 @@
-# Basic People Counting System on DE1-SoC FPGA
+# Basic People Counting System on DE1 FPGA
 
-Dự án thiết kế và hiện thực hóa hệ thống thống kê lưu lượng người ra vào sử dụng kit phát triển **FPGA DE1-SoC**. Hệ thống tích hợp cảm biến hồng ngoại để đếm người, hiển thị trạng thái qua LED/7-Segment và cảnh báo bằng Buzzer.
+Dự án thiết kế và hiện thực hóa hệ thống thống kê lưu lượng người ra vào sử dụng kit phát triển **FPGA DE1**. Hệ thống tích hợp cảm biến hồng ngoại để đếm người, hiển thị trạng thái qua LED/7-Segment và cảnh báo bằng Buzzer.
 
 ## 📌 Giới thiệu dự án
 Dự án tập trung vào việc ứng dụng công nghệ vi mạch và hệ thống nhúng để giải quyết bài toán giám sát mật độ người trong thực tế. 
