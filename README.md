@@ -1,35 +1,49 @@
 # Basic People Counting System on DE1 FPGA
 
-Dự án thiết kế và hiện thực hóa hệ thống thống kê lưu lượng người ra vào sử dụng kit phát triển **FPGA DE1**. Hệ thống tích hợp cảm biến hồng ngoại để đếm người, hiển thị trạng thái qua LED/7-Segment và cảnh báo bằng Buzzer.
+A hardware-based monitoring system designed to track and manage real-time occupancy and total visitor traffic using the **Terasic DE1 FPGA (Cyclone III)** FPGA platform.
 
-## 📌 Giới thiệu dự án
-Dự án tập trung vào việc ứng dụng công nghệ vi mạch và hệ thống nhúng để giải quyết bài toán giám sát mật độ người trong thực tế. 
-- **Mục tiêu:** Củng cố kiến thức thiết kế mạch số (Verilog/VHDL), thao tác trực tiếp với phần cứng FPGA và rèn luyện tư duy hệ thống.
-- **Tính ứng dụng:** Phù hợp cho các cửa hàng, thư viện hoặc khu vực cần quản lý lưu lượng khách hàng theo thời gian thực.
+## 📝 Project Overview
+In the rapidly evolving field of integrated circuit design, practicing digital logic on FPGA platforms provides essential hands-on experience. This project, titled **"Design and Implementation of a People Counter System,"** bridges the gap between theoretical digital design and real-world embedded applications.
 
-## ✨ Tính năng nổi bật
-* **Thống kê :** Theo dõi đồng thời tổng lượt khách đã vào và số người hiện có trong khu vực.
-* **Cảnh báo đa cấp:**
-    * **Mức Xanh:** Hoạt động bình thường.
-    * **Mức Vàng:** Lượng người tăng cao, cần lưu ý.
-    * **Mức Đỏ:** Đạt ngưỡng tối đa.
-    * **Buzzer:** Cảnh báo âm thanh khi quá tải.
-* **Cơ chế Reset độc lập:** * Reset trạng thái hiện tại (Reset số người đang ngồi) mà không làm mất dữ liệu thống kê tổng lượt khách trong ngày.
-    * Hỗ trợ quản lý dữ liệu linh hoạt cho báo cáo doanh thu dài hạn.
+By implementing this system, we have:
+* Reinforced core concepts of digital logic and hardware description languages.
+* Gained direct experience with industry-standard hardware (FPGA, DE1-SoC board).
+* Developed systematic thinking and problem-solving skills for electronics and electrical engineering.
 
-## 🛠 Công cụ và Công nghệ
-* **Hardware:** Terasic DE1-SoC (Cyclone V).
-* **Language:** Verilog HDL / VHDL.
-* **Software:** Quartus II v13.1.
-* **Peripheral:** * Infrared (IR) Sensors.
-    * 7-Segment Displays (HEX0-HEX5).
-    * LEDs & Buzzer.
-    * Breadboard.
+## 🎯 Objectives
+The project focuses on the following key goals:
+* **Design & Simulation:** Develop and simulate a basic digital circuit on an FPGA.
+* **Toolchain Mastery:** Understand the full design flow (programming, synthesis, and configuration) using **Intel Quartus II**.
+* **Hardware Verification:** Deploy the design onto the **DE1-SoC** board to evaluate accuracy and efficiency in a real-world environment.
+* **Documentation:** Complete a comprehensive technical report including theory, design schematics, and experimental analysis within a one-week timeframe.
 
-## 📂 Cấu trúc thư mục (Gợi ý)
-```text
-├── src/                # Chứa mã nguồn Verilog (.v)
-├── simulation/         # Các file testbench mô phỏng
-├── constraints/        # File gán chân (.qsf hoặc .sdc)
-├── docs/               # Tài liệu báo cáo, sơ đồ khối
-└── README.md
+## 🚀 Key Features
+The system monitors and manages occupancy based on a pre-set threshold, offering several real-time functionalities:
+
+* **Dual-Track Statistics:** Simultaneously monitors the current number of people in the area and the total cumulative visitor count.
+* **Visual & Audible Alerts:** * **Green Level:** Low occupancy, normal operation.
+    * **Yellow Level:** Moderate occupancy, caution advised.
+    * **Red Level:** High occupancy, near capacity.
+    * **Buzzer Alarm:** Triggered immediately when the threshold is exceeded (Overload).
+* **Independent Reset Logic:** Features a specialized reset mechanism where the "Current Occupancy" can be cleared (e.g., at the end of a shift) without affecting the "Total Cumulative Count." This ensures long-term data integrity for business reporting.
+
+## 🛠 Tech Stack & Components
+* **Hardware Description Language:** Verilog HDL / VHDL
+* **Development Software:** Intel Quartus II (v13.1)
+* **Main Controller:** DE1-SoC FPGA (Cyclone V)
+* **Peripherals:**
+    * Infrared (IR) Sensors
+    * Multi-color LEDs (Red, Yellow, Green)
+    * 7-Segment Displays (HEX0 - HEX5)
+    * Active Buzzer
+    * Breadboard and Jumper Wires
+
+## 📈 Practical Significance
+This system provides managers with real-time data to optimize operational efficiency. Insights gained from occupancy trends allow for better staff coordination, space management, and strategic business planning during peak hours.
+
+## 👥 Contributors
+* **Cao Khanh Duy** (Student ID: 22130040)
+* **Supervisor:** Mr. Kien
+
+---
+*This project was developed as part of a Digital Integrated Circuit Design course.*
