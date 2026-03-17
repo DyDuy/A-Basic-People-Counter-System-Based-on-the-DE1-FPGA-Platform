@@ -8,7 +8,7 @@ Dự án tập trung vào việc ứng dụng công nghệ vi mạch và hệ th
 - **Tính ứng dụng:** Phù hợp cho các cửa hàng, thư viện hoặc khu vực cần quản lý lưu lượng khách hàng theo thời gian thực.
 
 ## ✨ Tính năng nổi bật
-* **Thống kê song song:** Theo dõi đồng thời tổng lượt khách đã vào và số người hiện có trong khu vực.
+* **Thống kê :** Theo dõi đồng thời tổng lượt khách đã vào và số người hiện có trong khu vực.
 * **Cảnh báo đa cấp:**
     * **Mức Xanh:** Hoạt động bình thường.
     * **Mức Vàng:** Lượng người tăng cao, cần lưu ý.
