@@ -30,7 +30,7 @@ The system monitors and manages occupancy based on a pre-set threshold, offering
 ## 🛠 Tech Stack & Components
 * **Hardware Description Language:** Verilog HDL / VHDL
 * **Development Software:** Intel Quartus II (v13.1)
-* **Main Controller:** DE1-SoC FPGA (Cyclone II)
+* **Main Controller:** DE1- FPGA (Cyclone II)
 * **Peripherals:**
     * Infrared (IR) Sensors
     * Multi-color LEDs (Red, Yellow, Green)
